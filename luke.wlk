@@ -15,8 +15,12 @@ Se conocen los siguientes recuerdos:
 
 El recuerdo típico de París es un llavero de la torre eiffel.
 Buenos Aires tiene como recuerdo típico un mate, pero dependiendo de quién sea el presidente puede venir con yerba o no.
-El recuerdo típico de Bagdad va cambiando con los años, en algún momento pudo haber sido un bidón con petróleo crudo, alguna de las armas de destrucción masiva que nunca se encontraron o una réplica de los míticos jardines colgantes de Babilonia. O tal vez en el momento que viaje Luke sea otro diferente.
-Las Vegas, mas que tener algo típico propio, hace "homenaje" a otros lugares. Por ejemplo, si es visitada cuando se está conmemorando a París, el recuerdo es también el llavero de la torre eiffel y si se estuviera recordando a Buenos Aires, sería el mate.
+El recuerdo típico de Bagdad va cambiando con los años, en algún momento pudo haber sido un 
+bidón con petróleo crudo, 
+alguna de las armas de destrucción masiva que nunca se encontraron o 
+una réplica de los míticos jardines colgantes de Babilonia. O tal vez en el momento que viaje Luke sea otro diferente.
+Las Vegas, mas que tener algo típico propio, hace "homenaje" a otros lugares. Por ejemplo, si es visitada cuando se está conmemorando a París, el recuerdo es también el 
+llavero de la torre eiffel y si se estuviera recordando a Buenos Aires, sería el mate.
 
 
 Cada viaje que hace el alambique veloz consume una cierta cantidad de combustible.
@@ -41,12 +45,14 @@ object luke {
     var vehiculo = null
     var cantidadDeCiudadVisitadas = 0
     var ultimaCiudadvisitada = null
+    var añoDeVisita = 2024 //UNA IDEA DE QUE CAMBIE EL RECUERDO DE BAGDAD SEGUN EL AÑO (pero recurri al azar en vez de eso)
 
 
     method visitar(ciudad){
         recuerdo = ciudad.recuerdo()
         cantidadDeCiudadVisitadas += 1
         ultimaCiudadvisitada = ciudad
+        añoDeVisita += 1
     }
 
     method puedeVisitar(ciudad) {
