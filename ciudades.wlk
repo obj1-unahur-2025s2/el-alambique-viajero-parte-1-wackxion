@@ -9,7 +9,7 @@ object paris {
     return recuerdo
   }
   method puedevisitar(automovil) {
-    return automovil.combutible() > 20
+    return automovil.combutible() > 60
   } 
 
 }
@@ -44,9 +44,13 @@ object LasVegas {
     method recuerdo() {
         return conmemorando.recuerdo()
         }
+
     method puedeVisitar(automovil) {
-      return 
+
+        return conmemorando.puedeVisitar(automovil)
     }
 
   
 }
+
+// crear ciudad par los automoviles nuevos 
