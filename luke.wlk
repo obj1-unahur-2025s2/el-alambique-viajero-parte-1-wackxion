@@ -9,15 +9,16 @@ object luke {
     var vehiculo = alambiqueVeloz
     var cantidadDeCiudadVisitadas = 0
     var ultimaCiudadvisitada = null
-    var añoDeVisita = 2024 //UNA IDEA DE QUE CAMBIE EL RECUERDO DE BAGDAD SEGUN EL AÑO (pero recurri al azar en vez de eso)
 
 
     method visitar(ciudad){
         recuerdo = ciudad.recuerdo()
         cantidadDeCiudadVisitadas += 1
         ultimaCiudadvisitada = ciudad
-        vehiculo.cantidadCombustible() - 30
-        añoDeVisita += 1
+        if(self.vehiculo() == meteoroReicer){
+            self.vehiculo().cantidadCombustible() 
+        }
+        vehiculo.cantidadCombustible() - 30 
     }
 
     method puedeVisitar(ciudad) {
@@ -30,7 +31,6 @@ object luke {
     method ultimaCiudadvisitada() {
         return ultimaCiudadvisitada
     }
-
     method recuerdo() {
         return recuerdo
     }
