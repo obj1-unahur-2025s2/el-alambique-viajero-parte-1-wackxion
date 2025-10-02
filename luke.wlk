@@ -9,15 +9,11 @@ object luke {
     var vehiculo = alambiqueVeloz
     var cantidadDeCiudadVisitadas = 0
     var ultimaCiudadvisitada = null
-
-
+    
     method visitar(ciudad){
         recuerdo = ciudad.recuerdo()
         cantidadDeCiudadVisitadas += 1
         ultimaCiudadvisitada = ciudad
-        if(self.vehiculo() == meteoroReicer){
-            self.vehiculo().cantidadCombustible() 
-        }
         vehiculo.cantidadCombustible() - 30 
     }
 
